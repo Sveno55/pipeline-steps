@@ -7,10 +7,13 @@ The strategy is to breakdown the 'monolith' of business rules into a series of s
 #### Table of Contents  
 * [Example](#Example)
 * [Usage](#Usage)  
-* [Pipeline output](#Pipeline output)
+* [Pipeline output](#pipeline-output)
+* [Sharing data](#sharing-data)
+* [Dependency Injection & Unit Testing]
 <a name="Example"/>
 <a name="Usage"/>
-<a name="Pipeline output"/>
+<a name="pipeline-output"/>
+<a name="sharing-data"/>
 
 
 ## Example
