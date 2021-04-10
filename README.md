@@ -24,23 +24,23 @@ Create a pipeline of steps to execute
 ```
 IPipeline pipeline = new Pipeline();
 ```
-
+---
 ### Create your custom step
 Create your custom step's interface that extends `IStep`
 ```
 public interface IMyCustomStep : IStep
 ```
-
+---
 Create the concrete class of your custom step that extends `Step` and implements your custom interface `IMyCustomStep`
 ```
 public class MyCustomStep : Step, IMyCustomStep
 ```
-
+---
 In the constructor of your concrete custom step class, call the base classe's constructor by providing the step's name. Make sure that your **step name is unique** accross all steps in the pipeline. You can use your constructor's signature to inject the dependencies you need for this step.
 ```
 public MyCustomStep() : base("MyCustomStepName")
 ```
-
+---
 The abstract Step class will force you to implement the function `async Task ExecuteAsync(NextStepAction nextStep, params object[] arguments)`. This is where you will implement your business rule's main logic.
 
 The invocation of the `nextStep` action allows to chain/navigate to the next sequential step.
