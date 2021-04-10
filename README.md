@@ -4,6 +4,15 @@ This small project is a lightweight framework that facilitates writing unit test
 
 The strategy is to breakdown the 'monolith' of business rules into a series of steps that are individually much more easy to unit test and that can be executed as a whole using a `Pipeline` 
 
+#### Table of Contents  
+* [Example](#Example)
+* [Usage](#Usage)  
+* [Pipeline output](#Pipeline output)
+<a name="Example"/>
+<a name="Usage"/>
+<a name="Pipeline output"/>
+
+
 ## Example
 
 ```
