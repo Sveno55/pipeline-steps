@@ -2,9 +2,7 @@
 
 This small project is a lightweight framework that facilitates writing unit tests for functions that contain heavily layered and/or sequential business rules. 
 
-In this situation, when trying to write unit tests, it can be very challenging to figure out how to configure your inputs in order to navigate through all the business rules and  hit the changes that you've made.
-
-The strategy in this case is to breakdown the 'monolith' of business rules into a series of steps that are individually much more easy to unit test and that can be executed as a whole using a `Pipeline` 
+The strategy is to breakdown the 'monolith' of business rules into a series of steps that are individually much more easy to unit test and that can be executed as a whole using a `Pipeline` 
 
 ## Example
 
