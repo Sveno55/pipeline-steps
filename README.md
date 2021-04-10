@@ -9,11 +9,12 @@ The strategy is to breakdown the 'monolith' of business rules into a series of s
 * [Usage](#Usage)  
 * [Pipeline output](#pipeline-output)
 * [Sharing data](#sharing-data)
-* [Dependency Injection & Unit Testing]
+* [Dependency Injection & Unit Testing](#dependency-injection--unit-testing)
 <a name="Example"/>
 <a name="Usage"/>
 <a name="pipeline-output"/>
 <a name="sharing-data"/>
+<a name="dependency-injection--unit-testing"/>
 
 
 ## Example
