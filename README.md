@@ -7,14 +7,24 @@ The strategy is to breakdown the 'monolith' of business rules into a series of s
 #### Table of Contents  
 * [Example](#Example)
 * [Usage](#Usage)  
+  * [Create your pipeline](#create-your-pipeline)
+  * [Create your custom step](#create-your-custom-step)
+  * [Register your step](#register-your-step)
+  * [Execute the pipeline](#execute-the-pipeline)
 * [Pipeline output](#pipeline-output)
 * [Sharing data](#sharing-data)
 * [Dependency Injection & Unit Testing](#dependency-injection--unit-testing)
+* [Running Pipelines in Parallel](#running-pipelines-in-parallel)
 <a name="Example"/>
 <a name="Usage"/>
+<a name="create-your-pipeline"/>
+<a name="create-your-custom-step"/>
+<a name="register-your-step"/>
+<a name="execute-the-pipeline"/>
 <a name="pipeline-output"/>
 <a name="sharing-data"/>
 <a name="dependency-injection--unit-testing"/>
+<a name="running-pipelines-in-parallel"/>
 
 
 ## Example
