@@ -116,6 +116,21 @@ namespace PipelineSteps.UnitTests
 
         [Test]
         [Parallelizable]
+        public async Task TestPipelineOutputWhenNoValuesPassedToNextStep()
+        {
+            IPipeline pipeline = new Pipeline();
+
+            IStepTracker fakeStepTracker = A.Fake<IStepTracker>();
+
+            pipeline.registerRootStep(new StepA(fakeStepTracker));
+
+            object[] results = await pipeline.Run();
+
+            Assert.IsEmpty(results);
+        }
+
+        [Test]
+        [Parallelizable]
         public async Task TestOutputsOfStepAPassingArgumentsToStepB()
         {
             IStepTracker fakeStepTracker = A.Fake<IStepTracker>();
