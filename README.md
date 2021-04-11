@@ -76,7 +76,7 @@ public override async Task ExecuteAsync(NextStepAction nextStep, params object[]
 {
   /** Your step's main business rule goes here **/
   
-  nextStep();
+  await nextStep();
 }
 ```
 Use `nextStep()` to branch out. The NextStepAction can be mocked allowing you to easily unit test this.
@@ -85,9 +85,9 @@ Use `nextStep()` to branch out. The NextStepAction can be mocked allowing you to
 public override async Task ExecuteAsync(NextStepAction nextStep, params object[] arguments)
 {
   if (someCondition) {
-    nextStep('Step3');
+    await nextStep('Step3');
   } else { 
-    nextStep('Step5');
+    await nextStep('Step5');
   }
 }
 ```
