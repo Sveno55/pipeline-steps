@@ -161,10 +161,10 @@ Here's an example of unit testing a step (with Fake.It.Easy):
       //Instantiating the concrete step class (to test) and passing any necessary mocked dependencies
       IStep myCustomStep = new MyCustomStep();
       
-      //control over the inputs as pipeline state
+      //control over the inputs coming in as pipeline state
       myCustomStep.SetPipelineState(new CustomState() { FirstName = "John", Age = 21 });
       
-      //control of the inputs as nextStep arguments
+      //control of the inputs coming in as nextStep arguments
       await stepA.ExecuteAsync(fakeNextStep, "john.doe@gmail.com", 21, true, new List<string>());
 
       //Asserting values passed to the nextStep action.
