@@ -108,7 +108,7 @@ object[] results = await pipeline.Run();
 ```
 
 ## Sharing data
-There are two ways of sharing data between pipelines.
+There are two ways of sharing data between steps.
 #### Method 1
 * By passing data through `nextStep()` action. The first parameter is the next step name and any following parameters is passed on as `params object[] arguments` to the next step.
 
