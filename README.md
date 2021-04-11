@@ -79,6 +79,18 @@ public override async Task ExecuteAsync(NextStepAction nextStep, params object[]
   nextStep();
 }
 ```
+Use `nextStep()` to branch out. The NextStepAction can be mocked allowing you to easily unit test this.
+```
+
+public override async Task ExecuteAsync(NextStepAction nextStep, params object[] arguments)
+{
+  if (someCondition) {
+    nextStep('Step3');
+  } else { 
+    nextStep('Step5');
+  }
+}
+```
 ### Register your step
 ```
 pipeline.registerRootStep(new MyCustomStep());
