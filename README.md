@@ -49,12 +49,12 @@ IPipeline pipeline = new Pipeline();
 ```
 ---
 ### Create your custom step
-Create your custom step's interface that extends `IStep`
+Create your custom step's interface that extends `IStep`. You'll register your custom step `IMyCustomStep` into your dependency injection container. This will allow you to inject into your step all the dependencies that you need.
 ```
 public interface IMyCustomStep : IStep
 ```
 ---
-Create the concrete class of your custom step that extends `Step` and implements your custom interface `IMyCustomStep`
+Create the concrete class of your custom step that extends `Step` and implements your custom interface `IMyCustomStep`. 
 ```
 public class MyCustomStep : Step, IMyCustomStep
 ```
